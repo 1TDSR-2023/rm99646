@@ -43,3 +43,16 @@ console.log(frutas);
 //console.log(frutas);
 //console.log(`O item encontrado do índice depois da correção foi : ${ frutas[indice]}`)
 
+let nr1 = [1,2,3,4,5];
+let nr2 = [6,7,8,9,10];
+console.log("Array 1 :" + nr1);
+console.log("Array 2 :" + nr2);
+
+//Concatenando os dois arrays em um novo array.
+let nr3 = [...nr1,...nr2];
+console.log("Array 3 :" + nr3);
+
+
+nr3.forEach( (nr)=>{
+    console.log("Itens do Array 3 :" + nr);
+} );
