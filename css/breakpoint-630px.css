@@ -1,17 +1,15 @@
-/* BREAKPOINT 630px */
-
+/* BREAKPOINT 600px*/
 @media(max-width:630px) {
-    .cabecalho {
+    
+    .cabecalho{
         flex-direction: column;
     }
 
-    .cabecalho nav {
+    .cabecalho nav{
         flex-wrap: nowrap;
     }
 
-    .cabecalho a {
+    .cabecalho a{
         font-size: 2em;
     }
 }
-
-/* BREAKPOINT 630px */

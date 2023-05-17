@@ -1,81 +1,68 @@
+// // var nome1 = "Petroni";
+// // let nome2 = "Derick";
+// // const nome3 = "Ruan";
 
-// var nome = "Ruan";
-// let nome2 = "Borís";
+// // if(nome1 != ""){
+// //     let nome1 = "Geovana"
+// // }
 
-// //Regra 1 : INICIALIZAR NA DECLARAÇÃO;
-// //Regra 2 : NÃO ALTERAR O SEU VALOR DURANTE O FLUXO DO PROGRAMA;
-// const PI = 3.14;
-
-// var nome1 = "Petroni";
-
-// if(nome1 != ""){
-//     let nome1 = "Geovana";
-// }
-
-// console.log(nome1);
-/* <button id="meu-btn">CLICK</button> */
+// // console.log(nome1)
 
 // let botao = document.getElementById("meu-btn");
-// // console.log(botao.textContent);
-
-// botao.addEventListener("click", function(){ 
-//     // console.log(this.textContent);
-//     //Função matemática Math
-//     //randon = Retorna um número aleatório entre 0 e 1. Ex: 0.2282632765;
-//     //floor  = Ela arredonda um número para baixo.
-//     //ceil   = Ela arredonda um número para cima.
-//     //round  = Ela arredonda um número aleatóriamente.
-
-//     let r=0,g=0,b=0;
+// botao.addEventListener("click", function(){
+//     //Funçao matemática Math
+//     //random = retorna um número aleatório entre 0 e 1
+//     //floor = arredonda um numero para baixo
+//     //ceil = arrendonda um numero para cima
+//     //round = arredonda um número aleatóriamente
+//     let r=0, g=0, b=0;
+    
 //     r = Math.round(Math.random()*255);
 //     g = Math.round(Math.random()*255);
 //     b = Math.round(Math.random()*255);
-    
-//     // this.setAttribute("style","background-color:rgb("+r+","+g+","+b+");");
-//     this.setAttribute("style",`background-color:rgb(${r},${g},${b});`);
+
+//     this.setAttribute("style", `background-color: rgb(${r},${g},${b});`)
 
 // });
 
-//ESTUDAR
-//querySelector
-//querySelectorAll
-//Array
-//Estruturas de repetição
+// let frutas = ["banana", "maça", "pêssego", "laranja", "limão", "melancia"];
+// console.log(frutas)
+// console.table(frutas)
 
-//Declarar um Array 
-// let frutas = ["banana","maçã","pêssego","laranja","limão","melancia","kiwi"];
-// //Imprimindo o array
-// console.log(frutas);
-// console.table(frutas);
-// console.log(frutas[0]);
-// console.log(frutas[6]);
+// //Inserir item ao final do array com método push()
+// frutas.push("kiwi");
+// frutas.push("pitaya");
 
-// //Inserir um item ao final do array com o método push(nomeDoItem);
-// frutas.push("manga");
-// console.log(frutas);
-// //Inserir um item no início do array com o método unshift(nomeDoItem);
-// frutas.unshift("pitaya");
-// console.log(frutas);
+// //Inserir item ao ínicio do array com método unshift()
+// frutas.unshift("manga");
 
-// //Remover um item ao final do array com o método pop();
+// //Remover item ao final do array com método pop()
 // frutas.pop();
-// console.log(frutas);
-// //Remover um item no início do array com o método shift();
+
+// //Remover item ao inicio do array com método shift()
 // frutas.shift();
-// console.log(frutas);
 
-// //Localizar um item no array utilizando o método indexOf(nomeDoItem);
-// //Obs:Este método retorna o índice do item encontrado.
+// //Localizar um item no array utilizando um método indexOf(nomeDoItem)
+// //Obs: Retona o índice do item em encontrado
 // // let indice = frutas.indexOf("laranja");
-// // console.log(`O índice encontrado foi : ${indice}`);
-// // console.log(`O item buscado foi : ${frutas[indice]}`);
+// // console.log(`indice encontrado foi: ${indice}`)
+// // console.log(`indice encontrado foi: ${frutas[indice]}`)
 
-// //Realizando uma remoção de item utilizando o método splice().
-// //O método splice() recebe dois parâmetros, índice do item que será removido e a quantidade de vezes que este mesmo índice será removido. Ex: splice(indice, 1);
-// //Dica:Utilize o método indexOf() para buscar o índice do item no array.
+// //Realizando uma remoção de item utilizando metodo splice()
+// //O método splice() recebe dois parametros, p índice do item que será removido e a quantidade de vezes que este mesmo indíce será removido: Ex: splice(indice,1)
+// //Utilize o método indexOf para buscar o indíce do item no array.
+
 // let indice = frutas.indexOf("melancia");
-// console.log(`O item encontrado no índice antes da remoção foi : ${ frutas[indice]}`);
+// console.log(`o item encontrado no indice antes da remoção foi: ${frutas[indice]}`);
 // frutas.splice(indice,1);
-// console.log(frutas);
-// console.log(`O item encontrado no índice depois da remoção foi : ${ frutas[indice]}`);
+// console.log(`o item encontrado no indice depois da remoção foi: ${frutas[indice]}`);
 
+let nr1 = [1,2,3,4,5];
+let nr2 = [6,7,8,9,10];
+
+//Concatenando os dois arrays em um novo array com o operador
+let nr3 = [...nr1,...nr2]
+
+nr3.forEach((nr)=>{
+    console.log(`Items do array 3: ${nr} `)
+});
